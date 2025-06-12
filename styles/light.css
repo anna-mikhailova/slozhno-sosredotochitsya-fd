@@ -35,4 +35,10 @@
     --main-text-font-color: #353430;
     --background-pic-url: url("/images/cover-image-light.png");
   }
+
+  .theme-light .page {
+    .header__icon {
+      display: none;
+    }
+  }
 }
