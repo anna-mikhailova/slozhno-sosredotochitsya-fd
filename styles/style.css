@@ -2,13 +2,14 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  font-family: "IBM Plex mono", san-serif;
+  font-family: "IBM Plex mono", monospace;
   font-size: var(--main-font-size);
   font-weight: var(--main-font-weight);
   color: var(--main-text-font-color);
+  background-color: var(--background-color);
   background-image: var(--background-pic-url);
   background-size: cover;
-  background-position: bottom 0px left 50%;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -17,9 +18,10 @@
   position: relative;
   width: 100%;
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
   padding-inline: var(--padding-size);
   block-size: 100vh;
+  min-block-size: 668px;
   padding-block: var(--header-padding-block);
 }
 
@@ -27,6 +29,7 @@
   position: absolute;
   top: var(--padding-size);
   right: var(--padding-size);
+  display: var(--rec-icon-display);
 }
 
 .header__icon::before {
@@ -49,6 +52,7 @@
   top: 0.55rem;
   right: 0.55rem;
 }
+
 /* upper right corner figure*/
 .decorated-zone::before {
   content: "";
@@ -122,6 +126,7 @@
 .header__title {
   align-self: center;
 }
+
 .title-decor {
   background-color: var(--accent-color);
   color: var(--accent-decor-font-color);
@@ -155,20 +160,25 @@
   padding-block-start: var(--paragraph-top-padding);
 }
 
-.how-to__list-item-heading {
-  font-weight: normal;
-}
-
 .paragraph a {
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .paragraph a:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--main-text-font-color);
 }
 
 .paragraph a:focus {
   outline: 1px solid var(--main-text-font-color);
+}
+
+.how-to__list .title-decor {
+  font-weight: normal;
+}
+
+.how-to__atricle {
+  display: grid;
+  gap: var(--section-gap);
 }
 
 .pictures {
@@ -187,6 +197,7 @@
 .footer {
   padding-inline: var(--padding-size);
   block-size: 100vh;
+  min-block-size: 668px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -213,10 +224,10 @@
   }
 
   .why_hard {
-    grid-template-rows: 1;
+    grid-template-rows: 1fr;
   }
 
-  .why_hard__heading {
+  .why_hard .section_heading {
     grid-column: 1;
   }
 
@@ -229,24 +240,16 @@
     grid-column: 1/4;
   }
 
-  .how-to__heading {
+  .how-to .section_heading {
     grid-column: 1;
-    grid-row: 1/3;
   }
 
-  .how-to__underheading {
+  .how-to__atricle {
     grid-column: 2/4;
-    grid-row: 1;
     margin-inline-start: var(--columns-left-padding);
   }
 
-  .how-to__list {
-    grid-column: 2/4;
-    grid-row: 2;
-    padding-inline-start: var(--columns-left-padding);
-  }
-
-  .pictures__heading {
+  .pictures .title-decor {
     grid-column: 1/4;
     grid-row: 1;
   }

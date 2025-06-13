@@ -15,12 +15,7 @@
   --secondary-accent-color: #db00ff;
   --accent-decor-font-color: #000028;
   --main-text-font-color: #f1b2ce;
-  --background-pic-url: url("/images/cover-image-dark.png");
-}
-
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  .header__icon {
-    display: inline;
-  }
+  --background-pic-url: url("../images/cover-image-dark.png");
+  --background-color: #000028;
+  --rec-icon-display: inline;
 }

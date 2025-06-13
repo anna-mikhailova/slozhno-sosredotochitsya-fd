@@ -15,14 +15,9 @@
   --secondary-accent-color: #ffc2e6;
   --accent-decor-font-color: #353430;
   --main-text-font-color: #353430;
-  --background-pic-url: url("/images/cover-image-light.png");
-}
-
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  .header__icon {
-    display: none;
-  }
+  --background-pic-url: url("../images/cover-image-light.png");
+  --background-color: #fff1f7;
+  --rec-icon-display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -33,12 +28,8 @@
     --secondary-accent-color: #ffc2e6;
     --accent-decor-font-color: #353430;
     --main-text-font-color: #353430;
-    --background-pic-url: url("/images/cover-image-light.png");
-  }
-
-  .theme-light .page {
-    .header__icon {
-      display: none;
-    }
+    --background-pic-url: url("../images/cover-image-light.png");
+    --background-color: #fff1f7;
+    --rec-icon-display: none;
   }
 }

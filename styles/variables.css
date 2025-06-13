@@ -13,7 +13,8 @@
   --secondary-accent-color: #db00ff;
   --accent-decor-font-color: #000028;
   --main-text-font-color: #f1b2ce;
-  --background-pic-url: url("/images/cover-image-dark.png");
+  --background-pic-url: url("../images/cover-image-dark.png");
+  --background-color: #000028;
   --slogan-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --main-padding-block: 40px;
   --main-gap_between_sections: 50px;
@@ -23,6 +24,7 @@
   --menu-list-gap: 10px;
   --section-gap: 20px;
   --paragraph-top-padding: 10px;
+  --rec-icon-display: inline;
 }
 
 @media (width >= 768px) {
